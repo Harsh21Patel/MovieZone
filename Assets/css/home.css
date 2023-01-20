@@ -1,0 +1,63 @@
+body{
+  overflow-x: hidden;
+}
+
+.home{
+position: relative;
+width: 100%;
+height: 100%;
+background-image: url("../img/image2.png");
+background-repeat:no-repeat;
+
+}
+
+img:hover{
+transition: all 0.5s !important;
+transform: scale(1.1) !important;
+}
+
+
+hr {
+
+  height: 12px;
+  color: #575757;
+  background: #575757;
+}
+
+@media (min-width: 1200px) {
+.hero-font {
+font-size: 50px;
+line-height: 55px;
+font-weight: 650;
+}
+}
+
+@media (max-width: 1199.98px) {
+.hero-font {
+font-size: 28px;
+line-height: 30.8px;
+font-weight: 650;
+}
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #e50914; 
+    border-radius: 10px;
+  }
+
+input{
+    caret-color: #e50914;
+}
+
+body{
+  overflow-x: hidden;
+}

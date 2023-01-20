@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Zone</title>
+    <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../Assets/img/favicon.png" type="image/x-icon">
+    <link href="../Assets/css/scrollbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  </head>
+  <body style="background-color: #ffffff;">
+<!-- Header -->
+<nav class="navbar navbar-expand-lg shadow-lg p-1 bg-body rounded">
+  <div class="container-fluid">
+    <img src="../Assets/img/logo.svg" alt="Logo" class="img-fluid p-2 m-2" width="230">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../index.html" class="text-decoration-none text-black"><h5><i class="bi bi-house"></i> Home</h5></a>
+    </div>
+  </div>
+</nav>
+<!-- Header -->
+<br><br><br><br>
+<form class="needs-validation" action="./newpass.html" novalidate>
+<div class="d-flex justify-content-center align-items-center container">
+    <div class="card py-5 px-3 border border-danger rounded-0">
+        <h5 class="m-0">Email Verification</h5>
+        <span class="mobile-text">Enter OTP We Just Send On Your Email Id</span>
+        <div id="otp" class="inputs d-flex flex-row justify-content-center mt-5 "> 
+          <input class="m-1 text-center form-control rounded" type="number" id="validationCustom01" maxlength="1" required/>          
+          <input class="m-1 text-center form-control rounded" type="number" id="validationCustom01" maxlength="1" required/> 
+          <input class="m-1 text-center form-control rounded" type="number" id="validationCustom01" maxlength="1" required/> 
+          <input class="m-1 text-center form-control rounded" type="number" id="validationCustom01" maxlength="1" required/>
+        </div>
+        <br><br>
+        <div class="align-center">
+        <button type="submit" class="btn text-white" style="background-color: #e50914;">Verify</button>
+    </div>
+        
+        <br>
+        <div class="text-center">
+            Don't receive the code?  <a href="">Resend</a>
+        </div>
+    </div>
+</div>
+</form><br><br>
+
+<!-- OTP -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">OTP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+        <h4 class="text-center ">Your OTP Is : 2502</h4>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn text-white" style="background-color: #e50914;" data-dismiss="modal">Enter OTP</button>
+      </div>
+      </div>
+  </div>
+  </div>
+<!-- OTP -->
+     <!-- Footer -->
+     <div class="container-fluid m-0 p-0">
+
+      <div class="container" style="color: #727272;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0">© 2022 MovieZone <br>Developed By <a href="https://github.com/Harsh21Patel" style="color: #000000;" class="text-decoration-none">Harsh Patel <i class="bi bi-github"></i></a></p>
+          
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="../Assets/img/favicon.png" alt="" class="img-fluid" width="50" height="50">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/" class="nav-link px-2" style="color: #727272;"><i class="bi bi-house"></i> Home</a></li>
+            <li class="nav-item"><a href="./About.html" class="nav-link px-2" style="color: #727272;"><i class="bi bi-buildings">
+            </i> About</a></li>
+            <li class="nav-item"><a href="./Policy.html" class="nav-link px-2" style="color: #727272;"><i class="bi bi-file-earmark-break"></i> Policy</a></li>
+            <li class="nav-item"><a href="./Contact.html" class="nav-link px-2" style="color: #727272;"><i class="bi bi-envelope-at"></i> Contact</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    
+       <!-- Footer -->
+
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <script>
+        $(document).ready(function(){
+             $('#exampleModal').modal('show');
+         }); 
+
+
+
+
+
+
+         (() => {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+form.addEventListener('submit', event => {
+if (!form.checkValidity()) {
+  event.preventDefault()
+  event.stopPropagation()
+}
+
+form.classList.add('was-validated')
+}, false)
+})
+})()
+     </script>
+
+   </body>
+ </html>
