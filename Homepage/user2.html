@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Zone</title>
+    <link rel="shortcut icon" href="../Assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Assets/css/movie.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+  </head>
+  <body style="background-color: #000000;">
+
+<!-- Header -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black bg-gradient shadow-lg rounded-1">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./moviezone.html">
+                <img src="../Assets/img/logo.svg" alt="Logo" width="280" height="53" class="d-inline-block align-text-top">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarNav">        
+                <ul class="navbar-nav">
+                    &nbsp;&nbsp;
+                  <a style="font-size: 19px;" class="text-white text-decoration-none btn btn-black" href="./moviezone.html">Home</a>
+                  &nbsp;&nbsp;
+                  <div class="btn-group">
+                    <button type="button" style="font-size: 19px;" class="btn btn-black text-white dropdown-toggle text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                      Movies
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#movies">All Movies</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item " href="./language.html">Movies By Languages</a></li>
+                      <li><a class="dropdown-item" href="./genres.html">Movies By Genres</a></li>
+                    </ul>
+                  </div>
+                  &nbsp;&nbsp;
+                  <a style="font-size: 19px;" class="text-white text-decoration-none btn btn-black" href="./webseries.html">Web Series</a>
+                  &nbsp;&nbsp;
+
+                  <a style="font-size: 19px;" class="text-white text-decoration-none btn btn-outline-black" href="./recentlyadded.html">Recently Added</a>
+                  &nbsp;&nbsp;
+                  <a style="font-size: 19px;" class="text-white text-decoration-none btn btn-black" href="./mylist.html">My List</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="btn-group">
+                    <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="../Assets/img/dp2.jpg" class="img-fluid rounded-circle" width="29px" alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="./moviezone.html"><img src="../Assets/img/dp3.jpg" class="img-fluid rounded-circle" width="25px" alt=""> User 1</a></li>
+                      <li><a class="dropdown-item disabled" href="#"><img src="../Assets/img/dp2.jpg" class="img-fluid rounded-circle" width="25px" alt=""> User 2</a></li>
+                      <li><a class="dropdown-item" href="./user3.html"><img src="../Assets/img/dp1.jpg" class="img-fluid rounded-circle" width="25px" alt=""> User 3</a></li>
+                      <li><a class="dropdown-item" href="#">Manages Profiles</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../Pages/Account.html">Your Account</a></li>
+                      <li><a class="dropdown-item" href="../Pages/Contact.html">Help</a></li>
+                      <li><a class="dropdown-item" href="../Pages/Signin.html">Log Out</a></li>
+                    </ul>
+                  </div>&nbsp;&nbsp;&nbsp;
+                  <div class="search">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn text-white" type="submit" style="background-color: #e50914;">Search</button>
+                      </form></div>
+                  &nbsp;&nbsp;&nbsp;
+
+
+                
+                </ul>
+              </div>
+            </div>
+          </nav>
+<!-- Header -->
+
+<!-- Slider -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/slider/new/1.png" class="w-100 ">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../Assets/img/slider/new/2.png" class="w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../Assets/img/slider/new/3.png" class="w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../Assets/img/slider/new/4.png" class="w-100">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../Assets/img/slider/new/5.png" class="w-100">
+      </div>
+    </a>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon fw-bold" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- Slider -->
+
+<br>
+
+<!-- Container Continue -->
+<div class="text-white">    
+  <h3>&nbsp;&nbsp;Continue Watching</h3>     
+</div>
+  <div class="allmovie">
+    &nbsp;&nbsp;&nbsp;
+      <a href="">
+        <img src="../Assets/img/NewBollywood/cw1.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/cw2.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/cw3.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/cw4.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/cw5.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+  </div>
+<!-- Container -->
+
+<br><br>
+
+  <!-- Container New re -->
+<div class="text-white" id="movies">    
+  <h3>&nbsp;&nbsp;New Release</h3>     
+</div>
+  <div class="allmovie">  
+    &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/1.png" width="130rem;" class="rounded-3">
+      </a>&nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/2.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/3.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/4.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/5.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/6.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/7.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/8.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/9.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/10.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/11.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/12.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/13.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/14.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/15.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/16.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/17.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/18.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/19.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/NewBollywood/20.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+
+  </div>
+<!-- Container -->
+<br><br>
+
+  <!-- Container Top-->
+  <div class="text-white">    
+    <h1>&nbsp;&nbsp;#Top <img src="../Assets/img/Top/9.svg" class="img-fluid" width="40px" alt="">&nbsp;Movies</h1>     
+  </div>
+    <div class="allmovie">  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/1.png" width="260rem;" class="rounded-3">
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/2.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/3.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/4.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/5.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/6.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/7.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/8.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Top/9.png" width="260rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    </div>
+  <!-- Container -->
+
+
+<br><br>
+
+<!-- Category -->
+<div class="text-white">    
+  <h3>&nbsp;&nbsp;Genres</h3>     
+</div>
+<div class="allmovie">
+  &nbsp;&nbsp;&nbsp;
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/1.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp;
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/2.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp;
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/3.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/4.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/5.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/6.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/7.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/8.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/9.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/10.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/11.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/12.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/13.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/14.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/15.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+    <a href="../Assets/movies/Movie.mp4">
+      <img src="../Assets/img/Category/16.jpg" width="185rem;" class="rounded-3">
+    </a> &nbsp;&nbsp;&nbsp; 
+
+    
+   
+</div>
+<!-- Category -->
+
+<br><br>
+
+<!-- Container Bolly -->
+<div class="text-white">    
+  <h3>&nbsp;&nbsp;Best Of Bollywood</h3>     
+</div>
+  <div class="allmovie">
+    &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/10.jpg" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/2.jpg" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/4.jpg" width="150rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/5.jpg" width="145rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/13.jpg" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/12.jpg" width="153rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/15.jpg" width="145rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/1.jpg" width="143rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/6.jpg" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/7.jpg" width="150rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/9.jpg" width="145rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/11.jpg" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/14.jpg" width="170rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Bollywood/8.jpg" width="150rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+     
+  </div>
+  <!-- Container -->
+
+<br><br>
+
+  <!-- Marvel -->
+<div class="marvel rounded-3">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="child">
+    <div class="allmovie">
+      &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/11.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/12.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/13.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/7.png" width="163rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/8.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/3.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/4.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/15.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/9.png" width="163rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/14.png" width="140rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/10.png" width="150rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/5.png" width="143rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/6.png" width="170rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/1.png" width="145rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Marvel/2.png" width="167rem;"class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+         
+    </div>
+  </div>
+</div>
+<!-- Marvel -->  
+
+<br><br>
+
+  <!-- Container Hollywood -->
+<div class="text-white">    
+  <h3>&nbsp;&nbsp;Hollywood</h3>     
+</div>
+  <div class="allmovie">
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://moviezone-assets.netlify.app/avatar2.mp4">
+      <img src="../Assets/img/Hollywood/16.png" width="145rem;" class="rounded-3">
+    </a>
+    &nbsp;&nbsp;&nbsp;
+      <a href="https://moviezone-assets.netlify.app/avatar2.mp4">
+        <img src="../Assets/img/Hollywood/1.png" width="160rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/2.png" width="160rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/3.png" width="143rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/4.png" width="155rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/5.png" width="150rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/6.png" width="150rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/7.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/8.png" width="148rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/9.png" width="132rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/10.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/11.png" width="147rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/12.png" width="147rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/13.png" width="147rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/14.png" width="150rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Hollywood/15.png" width="150rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+  </div>
+  <!-- Container -->
+
+<br><br>
+
+<!-- Container Tollywood -->
+<div class="text-white">    
+  <h3>&nbsp;&nbsp;Tollywood Blockbuster</h3>     
+</div>
+  <div class="allmovie">
+    &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/1.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/2.png" width="145rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/3.png" width="153rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/4.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/5.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/6.png" width="169rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/7.png" width="157rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/8.png" width="170rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/9.png" width="160rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/10.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Tollywood/11.png" width="143rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+
+     
+  </div>
+<!-- Container -->
+
+<br><br>
+
+<!-- Language -->
+  <div class="text-white">    
+    <h3>&nbsp;&nbsp;Language</h3>     
+  </div>
+  <div class="allmovie">
+    &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/1.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/2.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/3.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/4.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/5.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/6.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/7.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/8.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/9.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Lang/10.jpg" width="185rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp; 
+ 
+  </div>
+<!-- Language -->
+
+<br><br>
+
+<!-- Container Gujarati -->
+<div class="text-white">    
+  <h3>&nbsp;&nbsp;Gujarati Movies</h3>     
+</div>
+  <div class="allmovie">
+    &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/1.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/2.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/3.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/4.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/5.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/6.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/7.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/8.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/9.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/10.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/11.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/12.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Gujarati/13.png" width="140rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+
+     
+  </div>
+<!-- Container -->
+
+<br><br>
+
+<!-- Disney -->
+<div class="disney rounded-3">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="child">
+    <div class="allmovie">
+      &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/1.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/2.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/3.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/4.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/5.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/6.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/7.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/8.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/9.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/10.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/11.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="../Assets/movies/Movie.mp4">
+          <img src="../Assets/img/Disney/12.png" width="150rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;   
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+
+</div>
+<!-- Disney -->
+
+<br><br>
+
+<!-- Container StarWars -->
+        <div class="text-white">    
+          <h3>&nbsp;&nbsp;<img src="../Assets/img/StarWars/starwars.svg" class="img-fluid" width="200px" alt=""></h3>     
+        </div>
+          <div class="allmovie">
+            &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/1.png" width="140rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/2.png" width="142rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/3.png" width="155rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/4.png" width="155rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/5.png" width="155rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/6.png" width="155rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/7.png" width="140rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/8.png" width="147rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/9.png" width="158rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+              <a href="../Assets/movies/Movie.mp4">
+                <img src="../Assets/img/Starwars/10.png" width="150rem;" class="rounded-3">
+              </a> &nbsp;&nbsp;&nbsp;
+          </div>
+<!-- Container -->
+
+<br><br>
+
+
+<!-- Coming Soon -->
+<div class="parent rounded-3">
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="child">
+    <div class="allmovie">
+      &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/1.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/2.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/3.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/4.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/5.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/6.jpg" width="230rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/7.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/8.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/9.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img src="../Assets/img/Upcoming/10.jpg" width="250rem;" class="rounded-3">
+        </a> &nbsp;&nbsp;&nbsp;    
+    </div>
+  </div>
+</div>
+<!-- Coming Soon -->
+
+<br><br>
+  
+<!-- Container Children -->
+<div class="text-white">    
+  <h3>&nbsp;&nbsp;Children</h3>     
+</div>
+  <div class="allmovie">
+    &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/1.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/2.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/3.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/4.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/5.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/6.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/7.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/13.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/8.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/9.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/10.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/11.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;
+      <a href="../Assets/movies/Movie.mp4">
+        <img src="../Assets/img/Children/12.png" width="175rem;" class="rounded-3">
+      </a> &nbsp;&nbsp;&nbsp;       
+  </div>
+<!-- Container -->
+
+<br><br>
+
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-white bg-black">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="./moviezone.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <img src="../Assets/img/logo.svg" width="190" class="img-fluid ms-4 mt-2" alt="">
+    </a>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-white text-decoration-none" href="./moviezone.html">Home</a></li>
+    <li class="ms-3"><a class="text-white text-decoration-none" href="../Pages/Signin.html">Log Out</a></li>
+    <li class="ms-3"><a class="text-white text-decoration-none" href="../Pages/Contact.html">Help</a></li>
+    <li class="ms-3"></li>
+  </ul>
+</footer>
+<!-- Footer -->
+    
+
+  <script src="../Assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<!-- #070e1b; -->
