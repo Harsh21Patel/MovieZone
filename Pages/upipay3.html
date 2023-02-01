@@ -7,8 +7,9 @@
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="../Assets/img/favicon.png" type="image/x-icon">
     <link href="../Assets/css/scrollbar.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <meta http-equiv="refresh" content="10; url = Paymentsuccess.html" />
+</head>
   </head>
   <body style="background-color: #ffffff;">
 <!-- Header -->
@@ -26,39 +27,25 @@
     </div>
   </div>
 </nav>
-<!-- Header -->
-    
+<!-- Header -->   
 <section class="gradient-custom">
     <div class="container my-5 py-5">
       <div class="row d-flex justify-content-center py-4">
         <div class="col-md-7 col-lg-5 col-xl-4">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-4 border border-danger rounded-4">
-              <form action="upipay2.html" class="needs-validation" method="" novalidate>
-                <h5>Pay With UPI QR</h5>
-                <div class="d-flex justify-content-between align-items-center mb-3 border">
-                  <div class="form-outline">      
-                    <a href="./upipay3.html">              
-                    <img src="../Assets/img/Payqr.svg" class="img-fluid w-100" />
-                  </a>
-                  </div>
-                </div>
-               
+              <form action="Paymentotp.html" method="">
+                <h5>Scan Qr And Pay</h5>
+                <hr> 
                 
-                <div class="row text-center">
-                  <h3>OR</h3>
-                </div><br>
-                <h5>Pay With UPI ID</h5>
-
-                <div class="input-group ">
-                  <input type="text" class="form-control" placeholder="" id="validationCustom01" aria-label="Username" required>
-                  <span class="input-group-text">@</span>
-                  <input type="text" class="form-control" placeholder="" id="validationCustom01" aria-label="Server" required>
-                </div>
-              <br>
                 <div class="text-center">
-                <input type="submit" class="btn text-white" style="background-color: #e50914;" value="Pay">
-              </div>
+                    <img src="../Assets/img/qr.png" class="img-fluid" alt="">
+                    <br><br>
+                    <h6>Qr Code Valid For</h6>
+                    <img src="../Assets/img/5-minute.gif" class="img-fluid w-50" alt="">
+                    <br>
+                    <a class="btn text-white" style="background-color: #e50914;" href="./plan.html" role="button">Cancle Payment</a>       
+            </div>
               </form>
             </div>
           </div>
@@ -92,6 +79,5 @@
 
 
     <script src="../Assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../Assets/js/formvalidation.js"></script>
   </body>
 </html>
